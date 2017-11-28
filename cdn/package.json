@@ -1,0 +1,17 @@
+{
+  "name": "log-converter",
+  "version": "1.0.0",
+  "description": "CDN Log file converter",
+  "main": "converter.js",
+  "repository": {},
+  "scripts": {},
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "request": "^2.81.0"
+  },
+  "author": "@mauriciottc",
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
+  }
+}
