@@ -19,9 +19,9 @@ exports.logConverter = (input, output) => {
     return new Promise((resolve, reject) => {
         if(!input || !output) return reject('missing arguments');
 
-        return request.get(process.argv[2], (error, response, body) => {
+        return request.get(input, (error, response, body) => {
             if (!error && response.statusCode == 200) 
-                return fs.writeFile(process.argv[3], header + body.replace(/\|/g, ";"), (err) => err ? reject('error while saving file') : resolve('salvo'));
+                return fs.writeFile(output, header + body.replace(/\|/g, ";"), (err) => err ? reject('error while saving file') : resolve('salvo'));
             else
                 return reject(`error, file not found`);
         });
