@@ -1,6 +1,6 @@
 # AgileContent CDN File Converter#
 
-This a node.js application develop to convert txt remote log files into csv files.
+This a node.js application developed to convert txt remote log files into csv files.
 
 ## installing and running application ##
 
